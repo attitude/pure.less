@@ -1,0 +1,16 @@
+@import '../../mixins.less';
+
+/*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
+
+.pure-g { .pure-mixin-g() }
+
+.opera-only :-o-prefocus,
+.pure-g { .pure-mixin-g-word-spacing() }
+
+.pure-u { .pure-mixin-u() }
+
+.pure-g [class *= "pure-u"] {
+    // Resets the font family back to the OS/browser's default sans-serif font,
+    // this the same font stack that Normalize.css sets for the `body`.
+    font-family: sans-serif;
+}

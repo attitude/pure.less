@@ -1,0 +1,10 @@
+@import '../../mixins.less';
+
+@media only screen and (max-width : 480px) {
+    .pure-form { .pure-mixin-form-responsive() }
+    .pure-group { .pure-mixin-fields-group-responsive(); }
+    .pure-form {
+        .pure-mixin-form-aligned-responsive();
+        .pure-mixin-form-messages-responsive();
+    }
+}
